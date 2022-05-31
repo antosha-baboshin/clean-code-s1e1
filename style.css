@@ -152,28 +152,28 @@ li > input[type="checkbox"] {
   width: 226px;
 }
 
-li > input[type="text"] {
+.main__task-list > input[type="text"] {
   width: 226px;
 }
 
-.main__del-btn img {
+.main__del-btn .main__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.main__del-btn img:hover {
+.main__del-btn .main__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.main__complete-task-block label {
+.main__complete-task-block .main__task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.main__tasks .main__task-list input[type=text] {
   display: none;
 }
 
@@ -182,6 +182,6 @@ ul li input[type=text] {
   width: 224px;
 }
 
-.main__tasks .main__task-list_edit label {
+.main__tasks .main__task-list_edit .main__task {
   display: none;
 }
