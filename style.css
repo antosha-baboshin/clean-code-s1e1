@@ -14,6 +14,10 @@ button{
   outline: none;
 }
 
+.main__task-list > * {
+  vertical-align: middle;
+}
+
 /* Basic Style */
 .body {
   background-color: #f8f8f8;
@@ -137,15 +141,11 @@ label[for="new-task"] {
   align-items: center;
 }
 
-li > * {
-  vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
+.main__task-list > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.main__task-list > label {
+.main__task-list > .main__task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
