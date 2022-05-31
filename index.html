@@ -10,57 +10,58 @@
 </head>
 
 <body class="body">
-  <header class="header-wrapper">
-    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-    <a class="info" href="https://goal-life.com/page/method/matrix-eisenhower">
+
+  <header class="header">
+    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix" class="header__img">
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </header>
 
-  <main class="main-wrapper">
-    <section class="add-item-block">
-      <h3>
+  <main class="main">
+    <section class="main__add-item-block">
+      <h3 class="main__title">
         <label for="new-task">Add Item</label>
-        <div class="task-wrapper">
-          <input id="new-task"class="task" type="text">
-          <button class="add">Add</button>
+        <div class="main__task-wrapper">
+          <input id="new-task"class="main__task main__task_new" type="text">
+          <button class="main__add-btn">Add</button>
         </div>
       </h3>
     </section>
 
-    <section class="icomplete-task-block">
-      <h3 class="section-title">Todo</h3>
+    <section class="main__icomplete-task-block">
+      <h3 class="main__title">Todo</h3>
       <ul id="incompleted-tasks">
-        <li>
+        <li class="main__task-list main__task-list_wrapper">
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="main__task">Pay Bills</label>
+          <input type="text" class="main__task">
+          <button class="main__edit-btn">Edit</button>
+          <button class="main__del-btn">
             <img src="./remove.svg" alt="Remove">
           </button>
         </li>
-        <li class="edit-mode">
+        <li class="main__task-list main__task-list_wrapper main__task-list_edit">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
+          <label class="main__task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="main__task">
+          <button class="main__edit-btn">Save</button>
+          <button class="main__del-btn">
             <img src="./remove.svg" alt="Remove">
           </button>
         </li>
       </ul>
     </section>
 
-    <section class="complete-task-block">
-      <h3>Completed</h3>
+    <section class="main__complete-task-block">
+      <h3 class="main__title">Completed</h3>
       <ul id="completed-tasks">
-        <li>
+        <li class="main__task-list main__task-list_wrapper">
           <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="main__task main__task_complete">See the Doctor</label>
+          <input type="text" class="main__task">
+          <button class="main__edit-btn">Edit</button>
+          <button class="main__del-btn">
             <img src="./remove.svg" alt="Remove">
           </button>
         </li>
@@ -68,6 +69,8 @@
     </section>
 
   </main>
+
   <script src="app.js"></script>
+  
 </body>
 </html>
